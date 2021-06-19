@@ -1,0 +1,22 @@
+$color-ppal:black;
+$color-sec:white;
+
+* {margin:0px;
+padding:0px;
+font-size: 20px;
+font-family: sans-serif;
+}
+a {
+    text-decoration: none;
+}
+a:visited {
+    color:$color-sec;
+}
+a:hover {
+    color: $color-sec;
+    background-image: radial-gradient(grey,$color-ppal)
+}
+a:active {
+    color: $color-sec;
+    background-image: radial-gradient(white,$color-ppal);
+}

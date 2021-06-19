@@ -1,0 +1,82 @@
+@import url(./reset_css.scss);
+$color-ppal:black;
+$color-sec:white;
+
+.header {
+    background-image: url(./Img_css/patas.relleno.jpg);
+    background-repeat: repeat;
+    width: inherit;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    color:$color-ppal;
+}
+nav {
+    width: inherit;
+    vertical-align: middle;
+}
+.header_menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: nowrap;
+    background-color: $color-ppal;
+    position: absolute;
+    top:210px;
+    height: 40px;
+    width:100%;
+    justify-items: center;
+}
+header h1 {
+    width: fit-content;
+    font-size: 40px;
+    background-color: $color-sec;
+    border-style: solid;
+    border-radius: 10px;
+    position: relative;
+    left: 10px;
+    top: 10px;
+    padding: 4px;
+}
+header nav ul li {
+    height: 20px;
+    justify-items: center;
+}
+main {
+    height: 750px;
+}
+.main_index{
+    height: 100%;
+    width: 100%;
+    background-image: url(./Img_css/razas-de-perro-adiestrar-t.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 1000;
+}
+footer {
+    display: flex;
+    flex-direction: column;
+    background-color: $color-ppal;
+    color: $color-sec;
+    padding-top: 25px;
+    padding-bottom: 10px;
+    padding-left: 15px;
+}
+footer ul li {
+    list-style: none;
+}
+a {
+    text-decoration: nones;
+}
+a:visited {
+    color:$color-sec;
+}
+a:hover {
+    color: $color-sec;
+    background-image: radial-gradient(grey,$color-ppal)
+}
+a:active {
+    color: $color-sec;
+    background-image: radial-gradient(white,$color-ppal);
+}
+
