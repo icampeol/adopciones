@@ -5,14 +5,18 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Adopciones Ignacio Campeol</title>
-  <link rel="stylesheet" href="./styles-form.css">
+  <meta name="description" content="En este sitio vas a poder ver todas las mascotas listas para adoptar ">
+  <meta name="keywords"  content="ADOPCION,PERRO,GATO,REFUGIO,MASCOTA,HOGAR,ADOPTAR,RESCATADO,CASTRAR">
+  <!--BOOTSTRAP-->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+  <!--Linkeo CSS-->
+  <link rel="stylesheet" href="./styles-form.css">
 </head>
 <body>
   <header class=header>
-    <h1>Adopta tu nueva mascota</h1>
-    <nav>
+    <h1 class=col-4>Adopta tu nueva mascota</h1> <!--Titulo en HEAD-->
+    <nav><!--Barra de menu en HEAD-->
       <ul class=header_menu>
         <li><a href="./index.html">Inicio</a></li>
         <li><a href="./en-adopcion.html">En adopcion</a></li>
@@ -25,37 +29,36 @@
       </nav>
     </header>
     <main>
-      <div class=main_resto>
-      <form action="">
-        <fieldset class=formulario>
-          <legend><h3>Mandanos tu donacion y danos tus datos para registrarte</h3></legend>
-          <h3>CBU 129038120938123</h3>
-          <h3> o envianos dinero a Mercado Pago con el mail refugio@gmail.com</h3>
-          <label for="nombre">Nombre Completo</label>
-          <input id="nombre" name="nomber" type="text">
+      <div class='main_resto'>
+        <form action="">
+        <div class=form-group>
+          <fieldset>
+            <legend><h3>Mandanos tu donacion y danos tus datos para registrarte</h3></legend>
+            <h3>CBU 129038120938123</h3>
+            <h3> o envianos dinero a Mercado Pago con el mail refugio@gmail.com</h3>
+            <label for="nombre">Nombre Completo</label>
+          <input id="nombre" name="nomber" type="text" class=form-control>
           <br>
           <label for="telefono">Telefono</label>
-          <input id="telefono" name="telefono" type="text">
+          <input id="telefono" name="telefono" type="text" class=form-control>
           <br>
           <br>
           <strong>Por que medio hiciste la donacion?</strong>
           <br>	
-          <label for="donacion">Por CBU</label>
-          <input id="cbu" name="donacion" type=radio>
+          <label for="donacion">Por CBU</label><input id="cbu" name="donacion" type=radio class=form-check>
+          <label for="donacion">Por Mercado Pago</label><input id="mp" name="donacion" type=radio class=form-check>
           <br>
-          <label for="donacion">Por Mercado Pago</label>
-          <input id="mp" name="donacion" type=radio>
-          <br>
-          <button type="submit">Enviar</button>
-          <button type="reset">Limpiar</button>
+          <button type="submit" class='btn btn-default'>Enviar</button>
+          <button type="reset" class='btn btn-default'>Limpiar</button>
         </fieldset>
+      </div>
       </form> 
     </div>
     </main>
     <footer>
-      <ul>
+      <ul class=container>
         <li><strong>Direccion</strong></li>
-        <li><span>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dicta, corporis.</span></li>
+        <li><span>Calle Rivera 4321, Villa Urquiza</span></li>
         <br>
         <li><strong>Telefono</strong></li>
         <li><span><em>+549</em>114011111</span></li>
