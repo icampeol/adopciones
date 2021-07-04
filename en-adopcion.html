@@ -16,7 +16,9 @@
 <body>
   <header class=header>
     <h1 class=col-4>Adopta tu nueva mascota</h1> <!--Titulo en HEAD-->
-    <nav><!--Barra de menu en HEAD-->
+    <nav class=container></nav><!--Barra de menu en HEAD-->
+    <input type="checkbox" id="btn-menu">
+    <label for="btn-menu"><img src="./Img_html/pata.jpg" alt=""></label>
       <ul class=header_menu>
         <li><a href="./index.html">Inicio</a></li>
         <li><a href="./en-adopcion.html">En adopcion</a></li>
@@ -27,33 +29,31 @@
         <li><a href="./contacto.html">Contacto</a></li>
     </ul>
       </nav>
-      <input type="checkbox" id="btn-menu">
-      <label for="btn-menu"><img src="./Img_html/pata.jpg" alt=""></label>
     </header>
   <main>
-    <div class=main_resto>
-      <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+    <div class="main_resto row col-12 row">
+      <div id="carouselExampleCaptions" class="carousel slide custom" data-bs-ride="carousel">
         <div class="carousel-indicators">
           <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
           <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
           <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
         </div>
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img src="./Img_html/cacho3.jpg" class="d-block w-100" alt="...">
+        <div class="carousel-inner col-12">
+          <div class="carousel-item active col-12">
+            <img src="./Img_html/cacho3.jpg" class="d-block w-100 col-12" alt="...">
             <div class="carousel-caption d-none d-md-block">
               <h5>Tito</h5>6 anos. Un fenomeno con todas las letras.</p>
             </div>
           </div>
-          <div class="carousel-item">
-            <img src="./Img_html/cacho1.jpg" class="d-block w-100" alt="...">
+          <div class="carousel-item col-12">
+            <img src="./Img_html/cacho1.jpg" class="d-block w-100 col-12" alt="...">
             <div class="carousel-caption d-none d-md-block">
               <h5>Venus</h5>
               <p>45 dias. Tamano a futuro incierto.</p>
             </div>
           </div>
-          <div class="carousel-item">
-            <img src="./Img_html/cacho2.jpg" class="d-block w-100" alt="...">
+          <div class="carousel-item col-12">
+            <img src="./Img_html/cacho2.jpg" class="d-block w-100 col-12" alt="...">
             <div class="carousel-caption d-none d-md-block">
               <h5>Frida</h5>
               <p>2 meses. Tamano a futuro sorpresa</p>

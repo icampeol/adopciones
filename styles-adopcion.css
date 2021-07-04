@@ -16,14 +16,17 @@
     color: white;
     flex-direction: column;
     list-style-type: none;
-    position: absolute;
     width:fit-content;
+    position: absolute;
+    right:0vmax;
+    margin-right: 100000px;
     z-index: 1;
+    top: 100px;
     font-size: 20px;
     font-family: sans-serif;
 }
-#btn-menu:checked~.header_menu {
-    right: 0px;
+#btn-menu:checked ~ .header_menu {
+    margin-right: 0px;
 }
 label img{
     height: 40px;
@@ -31,7 +34,6 @@ label img{
     margin-right: 20px;
 }
 input {display: none;}
-/*Menu hamburguesa mobile first*/
 header h1 {
     width: fit-content;
     font-family: sans-serif;
@@ -83,11 +85,8 @@ p{
     font-size: 20px;
 }
 .main_resto {
-    width: 750px;
-    height: 750px;
+    align-items: center;
     margin: 25px;
-    border: solid;
-    border-color: black;
 }
 main {
     display: flex;
@@ -176,5 +175,9 @@ main::before {
         }
         ul{display:flex;
             flex-direction:column;
+        }
+        .main_resto {
+            height: 750px;
+            width: 750px;
         }
     }

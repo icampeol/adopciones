@@ -16,7 +16,9 @@
 <body>
   <header class=header>
     <h1 class=col-4>Adopta tu nueva mascota</h1> <!--Titulo en HEAD-->
-    <nav><!--Barra de menu en HEAD-->
+    <nav class=container></nav><!--Barra de menu en HEAD-->
+    <input type="checkbox" id="btn-menu">
+    <label for="btn-menu"><img src="./Img_html/pata.jpg" alt=""></label>
       <ul class=header_menu>
         <li><a href="./index.html">Inicio</a></li>
         <li><a href="./en-adopcion.html">En adopcion</a></li>
@@ -27,19 +29,13 @@
         <li><a href="./contacto.html">Contacto</a></li>
     </ul>
       </nav>
-      <div class=menu_hamburguesa>
-        <div class="line"></div>
-        <div class="line"></div>
-        <div class="line"></div>
-        <div class="line"></div>
-      </div>
     </header>
     <main>
       <div class='main_resto'>
         <form action="">
-        <div class=form-group>
+        <div class="form-group container col-12">
           <fieldset>
-            <legend><h3>Mandanos tu donacion y danos tus datos para registrarte</h3></legend>
+            <legend class="containers col-8"><h3>Mandanos tu donacion y danos tus datos para registrarte</h3></legend>
             <h3>CBU 129038120938123</h3>
             <h3> o envianos dinero a Mercado Pago con el mail refugio@gmail.com</h3>
             <label for="nombre">Nombre Completo</label>
